@@ -1,0 +1,8 @@
+name: advantech-imx6-gadget
+version: 16.04-1
+summary: Advantech i.MX6
+description: |
+ This package is for Advantech ROM-4411-A1
+type: gadget
+architectures:
+  - armhf

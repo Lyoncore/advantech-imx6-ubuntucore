@@ -1,0 +1,11 @@
+{
+  "type": "model",
+  "authority-id": "HydsnL7f5YHlWroLIeNQrn9060uDSC53",
+  "brand-id": "HydsnL7f5YHlWroLIeNQrn9060uDSC53",
+  "series": "16",
+  "model": "advantech-imx6",
+  "architecture": "armhf",
+  "gadget": "advantech-imx6-gadget",
+  "kernel": "advantech-imx6",
+  "timestamp": "2017-05-25T08:48:28+00:00"
+}

@@ -1,0 +1,19 @@
+name: advantech-imx6
+version: 4.1.15
+summary: Linux kernel for i.MX6
+description: This is a generic kernel for i.MX6 built using imx_7_defconfig plus the minimal snappy config changes
+type: kernel
+
+parts:
+  kernel:
+    plugin: kernel
+    source: https://github.com/chihchun/linux-imx6.git
+    source-branch: imx_4.1.15_2.0.0_snappy
+    source-type: git
+    kdefconfig: [imx_v7_adv_defconfig, snappy/generic.config, snappy/security.config, snappy/systemd.config, snappy/snappy.config, snappy/containers.config]
+    kconfigs:
+      - CONFIG_LOCALVERSION="-imx6"
+    kernel-initrd-modules:
+      - squashfs
+    kernel-image-target: zImage
+    build-packages: [bc, lzop, cpio, kmod]
